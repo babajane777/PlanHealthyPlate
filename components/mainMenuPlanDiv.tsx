@@ -27,14 +27,14 @@ export default function MainMenuplanDiv() {
 
     return (
 
-        <div className="flex h-screen w-full justify-center px-4 pt-24 bg-gray-100">
-            <div className="w-full max-w-lg border-0 border-gray-400 rounded-lg p-4 bg-gray-200">
+        <div className="flex h-screen justify-center bg-white">
+            <div className="h-full w-full p-4 bg-gray-100 bg-gradient-to-r from-blue-100 to-purple-100">
                 <TabGroup>
                     <TabList className="flex gap-4">
                         {categories.map(({ name }) => (
                             <Tab
                                 key={name}
-                                className="rounded-full px-3 py-1 text-sm font-semibold text-black focus:outline-none hover:bg-gray-300 active:bg-gray-300 aria-selected:bg-gray-300"
+                                className="rounded-full px-3 py-1 text-sm font-semibold text-black focus:outline-none hover:bg-blue-400 hover:text-white active:bg-blue-400 aria-selected:bg-blue-600 aria-selected:text-white "
                             >
                                 {name}
                             </Tab>

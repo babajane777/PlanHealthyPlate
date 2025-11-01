@@ -3,15 +3,20 @@ import Calender from "./calender";
 export default function DayMenuTextfield() {
 
     return (
-        <div className="w-full">
-            <h1 className="text-1xl font-bold mb-4 text-center text-gray-800">
+        <div className="flex flex-col justify-center items-center w-full justify-center px-4 pt-4 bg-gradient-to-r from-blue-100 to-purple-100">
+            <h1 className="text-2xl font-bold mb-8 text-center text-gray-800">
                 Day Menu Plan
             </h1>
-            <Calender/>
+            <Calender />
             <textarea
-                placeholder="Type your full menu here..."
-                className="w-full h-50 px-4 py-3 border border-gray-400 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-400 text-gray-800 bg-white "
+                placeholder="Type your day menu here..."
+                className="w-full max-w-4xl h-70 px-4 py-3 border border-gray-400 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-400 text-gray-800 bg-white mt-10 overflow-y-auto"
             />
+            <div className="flex justify-center mt-10">
+                 <button className="bg-gray-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-500 transition">
+                    Get Ingredients
+                </button>
+            </div>
         </div>
     );
 }
