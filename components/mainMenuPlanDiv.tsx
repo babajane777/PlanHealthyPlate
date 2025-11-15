@@ -34,7 +34,7 @@ export default function MainMenuplanDiv() {
                         {categories.map(({ name }) => (
                             <Tab
                                 key={name}
-                                className="rounded-full px-3 py-1 text-sm font-semibold text-black focus:outline-none hover:bg-blue-400 hover:text-white active:bg-blue-400 aria-selected:bg-blue-600 aria-selected:text-white "
+                                className="rounded-full px-3 py-1 text-md font-semibold text-black focus:outline-none hover:bg-gray-900 hover:text-white active:bg-gray-900 aria-selected:bg-gray-800 aria-selected:text-white "
                             >
                                 {name}
                             </Tab>
