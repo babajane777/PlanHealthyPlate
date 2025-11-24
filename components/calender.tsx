@@ -9,7 +9,7 @@ export default function Calender() {
   
   return (
     <>
-      <button popoverTarget="rdp-popover" className="input input-border" style={{ anchorName: "--rdp" } as React.CSSProperties}>
+      <button popoverTarget="rdp-popover" className="input input-border bg-gray-700 border-white text-white" style={{ anchorName: "--rdp" } as React.CSSProperties}>
         {date ? date.toLocaleDateString() : "Pick a date"}
       </button>
       <div popover="auto" id="rdp-popover" className="dropdown" style={{ positionAnchor: "--rdp" } as React.CSSProperties}>

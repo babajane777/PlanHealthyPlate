@@ -13,8 +13,8 @@ export default function DayMenuTextfield() {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center w-full justify-center px-4 pt-4 bg-gradient-to-r from-blue-100 to-purple-100">
-            <h1 className="text-2xl font-bold mb-8 text-center text-gray-800">
+        <div className="flex flex-col justify-center items-center w-full justify-center px-4 pt-4 pb-4 bg-gray-800">
+            <h1 className="text-2xl font-bold mb-8 text-center text-white">
                 Day Menu Plan
             </h1>
             <Calender />
@@ -22,10 +22,10 @@ export default function DayMenuTextfield() {
                 placeholder="Type your day menu here..."
                 value={dayMenu}
                 onChange={handlemenuchange}
-                className="w-full max-w-4xl h-70 px-4 py-3 border border-gray-400 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-400 text-gray-800 bg-white mt-10 overflow-y-auto"
+                className="w-full max-w-4xl h-70 px-4 py-3 border border-white-400 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-white text-white bg-gray-700 mt-10 overflow-y-auto"
             />
             <div className="flex justify-center mt-10">
-                 <button className="bg-gray-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-500 transition">
+                 <button className="bg-purple-800 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-400 transition">
                     Get Ingredients
                 </button>
             </div>
